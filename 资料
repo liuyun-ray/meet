@@ -52,6 +52,17 @@ http://www.mackxin.com/webnav.html
 https://www.meiwen404.com/
 
 
+
+var domRect = element.getBoundingClientRect（）;
+返回值
+返回的值是一个DOMRect对象，它是getClientRects()元素返回的矩形的并集，即与元素关联的CSS边框。其结果是，其包含整个元件，具有只读的最小矩形left，top，right，bottom，x，y，width，和height性质描述在像素整体边界框。除视口左上角width和height相对于视口左上角的属性。
+空边框完全被忽略。如果所有元素的边框都为空，则返回一个带有 width和height都为0的矩形，其中top和left是该元素的第一个CSS框（按内容顺序）的border-box的左上角。
+在计算边界矩形时，考虑了视口区域（或任何其他可滚动元素）已完成的滚动量。这意味着，矩形的边界边（top，left，bottom和right）改变它们的值，每次滚动位置的变化（因为它们的值是相对于视而不是绝对的）。如果需要相对于文档左上角的边界矩形，只需将当前滚动位置添加到top和left属性（这些可以使用window.scrollX和window.scrollY获取）以获得与当前滚动位置无关的边界矩形。
+需要高跨浏览器兼容性的脚本可以使用window.pageXOffset和window.pageYOffset而不是window.scrollX和window.scrollY。无法访问这些属性的脚本可以使用如下代码：
+
+
+
+
 qq邮箱
 3180354348@qq.com
 
