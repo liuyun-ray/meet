@@ -60,7 +60,8 @@ var domRect = element.getBoundingClientRect（）;
 在计算边界矩形时，考虑了视口区域（或任何其他可滚动元素）已完成的滚动量。这意味着，矩形的边界边（top，left，bottom和right）改变它们的值，每次滚动位置的变化（因为它们的值是相对于视而不是绝对的）。如果需要相对于文档左上角的边界矩形，只需将当前滚动位置添加到top和left属性（这些可以使用window.scrollX和window.scrollY获取）以获得与当前滚动位置无关的边界矩形。
 需要高跨浏览器兼容性的脚本可以使用window.pageXOffset和window.pageYOffset而不是window.scrollX和window.scrollY。无法访问这些属性的脚本可以使用如下代码：
 
-
+https://bitbucket.org   //类似github的代码管理仓库
+账号：liuyun-ray/ray
 
 
 qq邮箱
